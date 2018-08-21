@@ -11,7 +11,7 @@ struct Book {
     var genre: String
     var author: String
     
-    func bookPrint() {                  //입력 확인
+    func bookPrint() {                  // 입력 확인
         print("Name : \(name)")
         print("Genre : \(genre)")
         print("Author : \(author)")
