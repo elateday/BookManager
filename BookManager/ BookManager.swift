@@ -27,10 +27,10 @@ class BookManager {
         return strTemp
     }
     
-//    func countBooks() -> Int {                          // count book
-//
-//    }
-//
+    func countBooks() -> Int {                          // count book
+        return bookList.count
+    }
+
 //    func searchBook(name: Stirng) -> String {           // search book
 //
 //    }

@@ -25,3 +25,5 @@ myBookManager.registerBook(bookObject: book2)
 myBookManager.registerBook(bookObject: book3)
 
 print(myBookManager.showAllBooks())                     // all book
+
+print("number of books : \(myBookManager.countBooks())")
