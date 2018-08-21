@@ -26,4 +26,26 @@ myBookManager.registerBook(bookObject: book3)
 
 print(myBookManager.showAllBooks())                     // all book
 
-print("number of books : \(myBookManager.countBooks())")
+print("number of books : \(myBookManager.countBooks())\n")
+
+//var searchResult = myBookManager.searchBook(name: "햄릿")
+//
+//if searchResult != nil {
+//
+//    print("\(searchResult!) 를 찾았습니다")
+//
+//} else {
+//
+//    print("찾으시는 책이 없습니다.")
+//}
+
+if let searchResult = myBookManager.searchBook(name: "햄릿") {    // search book
+    print("\(searchResult)를 찾았습니다.\n")
+} else {
+    print("찾으시는 책이 없습니다")
+}
+
+myBookManager.removeBook(name: "죄와벌")               // remobe book
+
+print(myBookManager.showAllBooks())
+print("number of books : \(myBookManager.countBooks())\n")
